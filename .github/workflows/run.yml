@@ -4,6 +4,9 @@ on: workflow_dispatch
 jobs:
   run-it:
     runs-on: ubuntu-latest
+    env:
+        MY_MSG: "Wiadomość z Github Actions"
+        
     steps:
       - uses: actions/checkout@v4
 
